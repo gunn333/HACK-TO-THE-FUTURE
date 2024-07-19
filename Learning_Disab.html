@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Disabilities Assessment and Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004d40; /* Dark Green */
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            margin: 1rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cfd8dc; /* Light Gray */
+        }
+
+        input[type="search"] {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            margin-top: 0.5rem;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        #banner {
+            background: linear-gradient(to right, #00796b, #004d40); /* Teal to Dark Green Gradient */
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        #banner h1, #banner p {
+            position: relative;
+            z-index: 2;
+        }
+
+        #banner .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #004d40; /* Dark Green */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        #banner .cta-button:hover {
+            background: #003d33; /* Darker Green */
+            transform: scale(1.05);
+        }
+
+        #overview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .card {
+            flex: 1;
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        #quick-links a {
+            display: block;
+            text-align: center;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #00796b; /* Teal Green */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        #quick-links a:hover {
+            background: #004d40; /* Dark Green */
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #004d40; /* Dark Green */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            #overview {
+                flex-direction: column;
+            }
+            
+            #overview .card {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="InclusiveSupportHub Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="adip.html">ADIP Scheme</a>
+            <a href="learning-disabilities.html">Learning Disabilities</a>
+            <a href="hearing-aids.html">Hearing Aids</a>
+            <a href="smart-white-cane.html">Smart White Cane</a>
+            <a href="government-schemes.html">Government Schemes</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+        <input type="search" placeholder="Search Learning Disabilities content">
+    </header>
+    
+    <main>
+        <section id="banner">
+            <h1>Learning Disabilities Assessment and Support</h1>
+            <p>Assess and manage reading and writing difficulties</p>
+            <a href="assessment.html" class="cta-button">Start Assessment</a>
+        </section>
+        
+        <section id="overview">
+            <div class="card">
+                <h2>What are Learning Disabilities?</h2>
+                <p>Explanation of SLDs and their impact.</p>
+            </div>
+            <div class="card">
+                <h2>Assessment Tools</h2>
+                <p>Overview of available assessment tools.</p>
+            </div>
+            <div class="card">
+                <h2>Remedial Guidance</h2>
+                <p>Brief on how the platform helps with remediation.</p>
+            </div>
+        </section>
+        
+        <section id="quick-links">
+            <a href="assessment.html">Start Assessment</a>
+            <a href="resource-library.html">Resource Library</a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 InclusiveSupportHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
