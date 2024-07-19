@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADIP Scheme Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40; 
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #cfd8dc; 
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        #registration {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #00796b; 
+        }
+
+        #registration h1 {
+            margin-bottom: 1rem;
+            color: #004d40; 
+        }
+
+        #registration h2 {
+            margin-top: 1.5rem;
+            color: #00796b; 
+        }
+
+        label {
+            display: block;
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="file"], select {
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 0.25rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            background-color: #00796b; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #004d40; 
+            transform: scale(1.05);
+        }
+
+        #assistance, #filters {
+            margin-top: 2rem;
+        }
+
+        #assistance a, #filters select {
+            display: block;
+            margin-top: 1rem;
+            color: #00796b; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #assistance a:hover {
+            color: #004d40; 
+        }
+
+        footer {
+            background-color: #004d40; 
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="adip.html">ADIP Scheme</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registration">
+            <h1>Registration Form</h1>
+            <form action="/submit-registration" method="post" enctype="multipart/form-data">
+                <h2>Personal Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="contact">Contact Details:</label>
+                <input type="text" id="contact" name="contact" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="disability">Disability Type:</label>
+                <input type="text" id="disability" name="disability" required>
+                
+                <h2>Document Upload</h2>
+                <label for="udid">UDID Card:</label>
+                <input type="file" id="udid" name="udid" required>
+                
+                <label for="certificate">Disability Certificate:</label>
+                <input type="file" id="certificate" name="certificate" required>
+                
+                <label for="income">Proof of Income:</label>
+                <input type="file" id="income" name="income" required>
+                
+                <button type="submit">Submit Registration</button>
+            </form>
+            
+            <section id="assistance">
+                <h2>Assistance</h2>
+                <a href="help-guides.html">Help Guides</a>
+                <a href="contact-support.html">Contact Support</a>
+            </section>
+            
+            <section id="filters">
+                <h2>Filter Options</h2>
+                <label for="region">Region:</label>
+                <select id="region">
+                    <option value="all">All</option>
+                    <!-- Will be adding regions -->
+                </select>
+                
+                <label for="aid-type">Aid Type:</label>
+                <select id="aid-type">
+                    <option value="all">All</option>
+                    <!-- Will be adding aid types -->
+                </select>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 InclusiveSupportHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
